@@ -1,10 +1,10 @@
 # Personal configuration files
 
 These config files consist of settings for: 
-    Nvim
-    Tmux
-    Alacritty
-    Powershell profile
-    Windows terminal settings
-
-
+<ol>
+    <li>Nvim</li>
+    <li>Tmux</li>
+    <li>Alacritty</li>
+    <li>Powershell profile</li>
+    <li>Windows terminal</li>
+</ol>
