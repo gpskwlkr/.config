@@ -87,7 +87,7 @@ bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
 # split in horizontal orientation
-bindsym $mod+h split h
+bindsym $mod+alt+h split h
 
 # split in vertical orientation
 bindsym $mod+v split v
@@ -229,3 +229,7 @@ exec ~/.config/autostart/picomp.sh
 bindsym $mod+F1 exec --no-startup-id ~/.config/i3/scripts/switch_audio_to_speakers.sh
 bindsym $mod+F2 exec --no-startup-id ~/.config/i3/scripts/switch_audio_to_headphones.sh
 bindsym $mod+F3 exec --no-startup-id ~/.config/i3/scripts/stop-player.sh
+bindsym $mod+F4 exec --no-startup-id ~/.config/i3/scripts/save-workspaces.sh
+
+exec ~/.config/i3/scripts/restore-workspaces.sh
+exec ~/.config/i3/scripts/keyboard_settings.sh
