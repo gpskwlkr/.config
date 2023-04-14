@@ -1,2 +1,4 @@
 #!/bin/bash
-pactl set-default-sink 1134
+
+HEADPHONES_ID=$(pactl list short sinks | grep Razer | awk ' { print $1 } ')
+pactl set-default-sink $HEADPHONES_ID
