@@ -22,3 +22,12 @@ keymap.set("n", "<leader>tn", ":tabn<CR>") --  go to next tab
 keymap.set("n", "<leader>tp", ":tabp<CR>") --  go to previous tab
 
 keymap.set("n", "<leader>ff", "gg<CR>=G<CR>") -- fix indentations in the current file
+
+
+keymap.set("n", "<Leader>ab", ":lua require'dap'.toggle_breakpoint()<CR>", opts)
+keymap.set("n", "<Leader>ar", ":lua require'dap'.repl.open()<CR>", opts)
+keymap.set("n", "<Leader>au", ":lua require'dapui'.toggle()<CR>", opts)
+keymap.set("n", "<F5>", ":lua require'dap'.continue()<CR>", opts)
+keymap.set("n", "<F10>", ":lua require'dap'.step_over()<CR>", opts)
+keymap.set("n", "<F11>", ":lua require'dap'.step_into()<CR>", opts)
+keymap.set("n", "<F12>", ":lua require'dap'.step_out()<CR>", opts)
