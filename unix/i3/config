@@ -116,7 +116,7 @@ bindsym $mod+a focus parent
 # We use variables to avoid repeating the names in multiple places.
 set $ws1 "1: Editor "
 set $ws2 "2: Internet "
-set $ws3 "3"
+set $ws3 "3: Books "
 set $ws4 "4: Htop "
 set $ws5 "5: Games "
 set $ws6 "6"
@@ -224,6 +224,7 @@ assign [class="Steam"] $ws5
 assign [class="mailspring"] $ws2
 assign [class="telegram-desktop"] $ws10
 assign [class="lutris"] $ws5
+assign [class="FBReader"] $ws3
 
 bindsym $mod+d exec rofi -show drun -show-icons
 bindsym $mod+c exec rofi -show calc -show-icons

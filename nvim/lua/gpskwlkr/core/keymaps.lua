@@ -21,7 +21,7 @@ keymap.set("n", "<leader>tx", ":tabclose<CR>") -- close current tab
 keymap.set("n", "<leader>tn", ":tabn<CR>") --  go to next tab
 keymap.set("n", "<leader>tp", ":tabp<CR>") --  go to previous tab
 
-keymap.set("n", "<leader>ff", "gg<CR>=G<CR>") -- fix indentations in the current file
+keymap.set("n", "<leader>ff", ":Format<CR>") -- fix indentations in the current file
 
 
 keymap.set("n", "<Leader>ab", ":lua require'dap'.toggle_breakpoint()<CR>", opts)

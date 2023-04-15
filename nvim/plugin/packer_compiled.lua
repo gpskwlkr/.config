@@ -105,6 +105,11 @@ _G.packer_plugins = {
     path = "/home/gpskwlkr/.local/share/nvim/site/pack/packer/start/cmp-path",
     url = "https://github.com/hrsh7th/cmp-path"
   },
+  ["formatter.nvim"] = {
+    loaded = true,
+    path = "/home/gpskwlkr/.local/share/nvim/site/pack/packer/start/formatter.nvim",
+    url = "https://github.com/mhartington/formatter.nvim"
+  },
   ["gitsigns.nvim"] = {
     loaded = true,
     path = "/home/gpskwlkr/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
