@@ -35,10 +35,3 @@ schemes:
       cyan: "0x95E6CB"
       white: "0xFFFFFF"
 colors: *ayudark
-
-shell:
-  program: /bin/zsh
-  args:
-    - -l
-    - -c 
-    - "tmux attach || tmux"

@@ -222,6 +222,8 @@ assign [class="firefox"] $ws2
 assign [class="Alacritty"] $ws1
 assign [class="Steam"] $ws5
 assign [class="mailspring"] $ws2
+assign [class="telegram-desktop"] $ws10
+assign [class="lutris"] $ws5
 
 bindsym $mod+d exec rofi -show drun -show-icons
 bindsym $mod+c exec rofi -show calc -show-icons

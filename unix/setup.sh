@@ -24,5 +24,6 @@ ln -s /home/gpskwlkr/dev/.config/unix/i3-resurrect /home/gpskwlkr/.config/i3-res
 ln -s /home/gpskwlkr/dev/.config/unix/picom /home/gpskwlkr/.config/picom
 ln -s /home/gpskwlkr/dev/.config/unix/gtk-3.0 /home/gpskwlkr/.config/gtk-3.0
 ln -s /home/gpskwlkr/dev/.config/unix/.tmux.conf /home/gpskwlkr/.tmux.conf
+ln -s /home/gpskwlkr/dev/.config/nvim /home/gpskwlkr/.config/nvim\
 
 echo "Successfully completed setup, it's recommended that you log out of i3 session and log back in."
