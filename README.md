@@ -6,6 +6,8 @@ These config files consist of settings for:
     <li>Tmux</li>
     <li>Alacritty</li>
     <li>i3</li>
+    <li>i3-resurrect</li>
+    <li>rofi</li>
     <li>Powershell profile</li>
     <li>Windows terminal</li>
 </ol>
