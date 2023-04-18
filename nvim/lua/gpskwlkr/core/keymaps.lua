@@ -24,10 +24,25 @@ keymap.set("n", "<leader>tp", ":tabp<CR>") --  go to previous tab
 keymap.set("n", "<leader>ff", ":Format<CR>") -- fix indentations in the current file
 
 
-keymap.set("n", "<Leader>ab", ":lua require'dap'.toggle_breakpoint()<CR>", opts)
-keymap.set("n", "<Leader>ar", ":lua require'dap'.repl.open()<CR>", opts)
-keymap.set("n", "<Leader>au", ":lua require'dapui'.toggle()<CR>", opts)
-keymap.set("n", "<F5>", ":lua require'dap'.continue()<CR>", opts)
-keymap.set("n", "<F10>", ":lua require'dap'.step_over()<CR>", opts)
-keymap.set("n", "<F11>", ":lua require'dap'.step_into()<CR>", opts)
-keymap.set("n", "<F12>", ":lua require'dap'.step_out()<CR>", opts)
+-- keymap.set("n", "<Leader>ab", ":lua require'dap'.toggle_breakpoint()<CR>", opts)
+-- keymap.set("n", "<Leader>ar", ":lua require'dap'.repl.open()<CR>", opts)
+-- keymap.set("n", "<Leader>au", ":lua require'dapui'.toggle()<CR>", opts)
+-- keymap.set("n", "<F5>", ":lua require'dap'.continue()<CR>", opts)
+-- keymap.set("n", "<F10>", ":lua require'dap'.step_over()<CR>", opts)
+-- keymap.set("n", "<F11>", ":lua require'dap'.step_into()<CR>", opts)
+-- keymap.set("n", "<F12>", ":lua require'dap'.step_out()<CR>", opts)
+--
+-- move keymaps
+
+opts = { noremap = true, silent = true }
+-- Normal-mode commands
+vim.keymap.set('n', '<A-j>', ':MoveLine(1)<CR>', opts)
+vim.keymap.set('n', '<A-k>', ':MoveLine(-1)<CR>', opts)
+vim.keymap.set('n', '<A-h>', ':MoveHChar(-1)<CR>', opts)
+vim.keymap.set('n', '<A-l>', ':MoveHChar(1)<CR>', opts)
+
+-- Visual-mode commands
+vim.keymap.set('v', '<A-j>', ':MoveBlock(1)<CR>', opts)
+vim.keymap.set('v', '<A-k>', ':MoveBlock(-1)<CR>', opts)
+vim.keymap.set('v', '<A-h>', ':MoveHBlock(-1)<CR>', opts)
+vim.keymap.set('v', '<A-l>', ':MoveHBlock(1)<CR>', opts)
