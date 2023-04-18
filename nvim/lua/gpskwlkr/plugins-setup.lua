@@ -9,10 +9,10 @@ return require('packer').startup(function(use)
         requires = { {'nvim-lua/plenary.nvim'} }
     }
 
-    use({
-        'rose-pine/neovim',
-        as = 'rose-pine'
-    })
+    -- use({
+    --     'rose-pine/neovim',
+    --     as = 'rose-pine'
+    -- })
 
     use("theprimeagen/harpoon")
     use({"nvim-treesitter/nvim-treesitter", run = function()
@@ -82,4 +82,6 @@ use {
     use 'leoluz/nvim-dap-go'
     use { "rcarriga/nvim-dap-ui", requires = {"mfussenegger/nvim-dap"} }
     use { 'mhartington/formatter.nvim' }
+
+    use { "ellisonleao/gruvbox.nvim" }
 end)

@@ -1,14 +1,7 @@
-local status, rose_pine = pcall(require, "rose-pine")
-if not status then 
-    return
-end
-
-rose_pine.setup({
-    disable_background = true
-})
+vim.o.background = "dark"
 
 function ColorMyPencils(color) 
-    color = color or "rose-pine"
+    color = color or "gruvbox"
 
     vim.cmd.colorscheme(color)
 
