@@ -109,7 +109,7 @@ source $ZSH/oh-my-zsh.sh
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-export PATH=~/.dotnet:~/.dotnet/tools:/usr/local/go/bin:~/go/bin:$PATH
+export PATH=~/.dotnet:~/.dotnet/tools:/usr/local/go/bin:~/go/bin:~/.local/bin:$PATH
 alias wdd="wd d"
 alias rs="source ~/.zshrc"
 
