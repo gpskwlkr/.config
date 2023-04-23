@@ -1,4 +1,6 @@
 font:
+  normal:
+    family: FiraCode Nerd Font
   size: 14
 window:
   padding:

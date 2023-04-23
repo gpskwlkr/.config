@@ -214,7 +214,7 @@ bar {
 }
 
 bindsym $mod+Shift+x exec ~/.config/i3/scripts/lock.sh
-exec_always feh --bg-scale /home/gpskwlkr/Pictures/wallpaper.png
+exec_always feh --bg-scale /home/gpskwlkr/Pictures/wall.jpg
 
 assign [class="Spotify"] $ws10
 assign [class="discord"] $ws10
@@ -222,13 +222,14 @@ assign [class="firefox"] $ws2
 assign [class="Alacritty"] $ws1
 assign [class="Steam"] $ws5
 assign [class="mailspring"] $ws2
-assign [class="telegram-desktop"] $ws10
+assign [class="TelegramDesktop"] $ws10
 assign [class="lutris"] $ws5
 assign [class="FBReader"] $ws3
 
 bindsym $mod+d exec rofi -show drun -show-icons
 bindsym $mod+c exec rofi -show calc -show-icons
-exec ~/.config/autostart/picomp.sh
+# exec ~/.config/autostart/picomp.sh
+exec --no-startup-id picom --config ~/.config/picom/picom.conf
 
 bindsym $mod+F1 exec --no-startup-id ~/.config/i3/scripts/switch_audio_to_speakers.sh
 bindsym $mod+F2 exec --no-startup-id ~/.config/i3/scripts/switch_audio_to_headphones.sh
